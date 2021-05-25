@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Die Layout-Dateien beinhalten die angezeigten Views. Diese sind einer Activity.cs
+zugeordnet. IDs und Strings finden sich in den jeweiligen Ressourcen-XMLs
+wieder.-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/activity_main_Txv_Anweisung"
-        android:text="@string/activity_main_Tvx_Anweisung_Text"
+        android:text="@string/activity_main_Txv_Anweisung_Text"
         android:textSize="20dp"
         />
 
@@ -35,10 +38,16 @@
         android:text="@string/activity_main_Btn_Google_Text"/>
 
     <Button
+        android:id="@+id/activity_main_Btn_ShowPicture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/activity_main_Btn_ShowPicture"
-        android:text="Zeige Bilder"/>
+        android:text="@string/activity_main_Btn_ShowPicture_Text"/>
+        
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_main_Btn_Todo"
+        android:text="Goto Todos"/>
 
 
 </LinearLayout>
